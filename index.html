@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Gilbert Christoph Stefanus Naibaho</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- External CSS -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-accent fw-bold" href="#home">Portofolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Keahlian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header
+      id="home"
+      class="hero-section d-flex align-items-center text-center"
+    >
+      <div class="container">
+        <!-- Foto Bulat -->
+        <img
+          src="element/Profil.png"
+          alt="Foto Profil"
+          class="rounded-circle profile-img mb-4 shadow"
+        />
+
+        <!-- Nama -->
+        <h1 class="display-4 fw-bold">Gilbert Christoph Stefanus Naibaho</h1>
+
+        <!-- Penjelasan Singkat -->
+        <div class="row justify-content-center mt-3">
+          <div class="col-lg-8">
+            <p class="lead text-secondary">
+              Saya adalah Mahasiswa Semester 2 Teknologi Rekayasa Perangkat
+              Lunak di Politeknik Wilmar Bisnis Indonesia (WBI) dengan
+              ketertarikan mendalam pada industri game development. Sebagai
+              individu yang analitis dan terstruktur, saya memiliki dedikasi
+              tinggi dalam memecahkan masalah logika pemrograman yang kompleks.
+              Visi jangka panjang saya adalah merancang dan mengembangkan game
+              interaktif yang menarik. Saat ini, saya terus mengasah fondasi
+              teknis saya—mulai dari logika Java, Python, hingga perancangan
+              antarmuka—untuk mengubah ide menjadi karya nyata
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-sec">
+      <div class="container py-4">
+        <h2 class="text-center mb-5 fw-bold">
+          Keahlian <span class="text-accent">Saya</span>
+        </h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Skill Card 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 skill-card text-center p-4">
+              <div class="card-body">
+                <i class="bi bi-code-slash fs-1 text-accent mb-3 d-block"></i>
+                <h5 class="card-title text-accent mb-3">Programming</h5>
+                <p class="card-text text-secondary">
+                  Java (Logic, Arrays, Loops), Python (Kalkulasi), HTML & CSS
+                  untuk tata letak web.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Skill Card 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 skill-card text-center p-4">
+              <div class="card-body">
+                <i
+                  class="bi bi-file-earmark-word fs-1 text-accent mb-3 d-block"
+                ></i>
+                <h5 class="card-title text-accent mb-3">Word dan Excel</h5>
+                <p class="card-text text-secondary">
+                  Mahir menggunakan Microsoft Word untuk dokumentasi dan
+                  proposal, serta Excel untuk pengolahan data.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Skill Card 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 skill-card text-center p-4">
+              <div class="card-body">
+                <i class="bi bi-car-front fs-1 text-accent mb-3 d-block"></i>
+                <h5 class="card-title text-accent mb-3">Driving</h5>
+                <p class="card-text text-secondary">
+                  Bisa mengendarai Mobil dan Motor dengan baik untuk menunjang
+                  mobilitas dan operasional kegiatan sehari-hari.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container py-4">
+        <h2 class="text-center mb-5 fw-bold">
+          Etalase <span class="text-accent">Proyek</span>
+        </h2>
+        <div class="row g-4">
+          <!-- Project Card 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 project-card overflow-hidden">
+              <!-- Ganti URL src ini dengan link gambar aslimu nanti -->
+              <img
+                src="element/Login.png"
+                class="card-img-top border-bottom border-dark"
+                alt="Proyek 1"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#modalProyek1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold mt-2">Login</h5>
+                <p class="card-text text-secondary flex-grow-1">
+                  Membuat Form Login yang simpel dan menarik
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 project-card overflow-hidden">
+              <img
+                src="element/Kartu Nama.png"
+                class="card-img-top border-bottom border-dark"
+                alt="Proyek 2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#modalProyek2"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold mt-2">Kartu Nama</h5>
+                <p class="card-text text-secondary flex-grow-1">
+                  Membuat kartu nama yang berisi tentang diri saya
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 project-card overflow-hidden">
+              <img
+                src="element/Web Berita.png"
+                class="card-img-top border-bottom border-dark"
+                alt="Proyek 3"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#modalProyek3"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold mt-2">Web Berita</h5>
+                <p class="card-text text-secondary flex-grow-1">
+                  Membuat Web Berita yang berisi informasi terkini dan menarik
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 project-card overflow-hidden">
+              <img
+                src="element/Desain Antar Muka.png"
+                class="card-img-top border-bottom border-dark"
+                alt="Proyek 4"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#modalProyek4"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold mt-2">Desain Antar Muka</h5>
+                <p class="card-text text-secondary flex-grow-1">
+                  Membuat Desain Antar Muka yang berisi album foto pengalaman
+                  selama setahun di Wilmar Bisnis Indonesia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-sec">
+      <div class="container py-4">
+        <h2 class="text-center mb-5 fw-bold">
+          Hubungi <span class="text-accent">Saya</span>
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card contact-card p-4 p-md-5 text-center">
+              <div class="card-body">
+                <h4 class="card-title fw-bold mb-3">Mari Berdiskusi</h4>
+                <p class="text-secondary mb-5">
+                  Saya terbuka untuk diskusi mengenai kolaborasi proyek,
+                  perancangan sistem, atau sekadar berbincang seputar dunia
+                  teknologi, game, dan bisnis.
+                </p>
+
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                  <!-- Link WhatsApp -->
+                  <a
+                    href="https://wa.me/6281310884530"
+                    target="_blank"
+                    class="btn btn-outline-custom px-4 py-2 d-flex align-items-center"
+                  >
+                    <i class="bi bi-whatsapp me-2 fs-5"></i> WhatsApp
+                  </a>
+                  <!-- Link Email -->
+                  <a
+                    href="mailto:2505010034@wbi.ac.id"
+                    class="btn btn-outline-custom px-4 py-2 d-flex align-items-center"
+                  >
+                    <i class="bi bi-envelope-fill me-2 fs-5"></i> Email
+                  </a>
+                  <!-- Link Instagram -->
+                  <a
+                    href="https://www.instagram.com/zech.darkness26/"
+                    target="_blank"
+                    class="btn btn-outline-custom px-4 py-2 d-flex align-items-center"
+                  >
+                    <i class="bi bi-instagram me-2 fs-5"></i> Instagram
+                  </a>
+                  <!-- Link Facebook -->
+                  <a
+                    href="https://web.facebook.com/gilbert.naibaho.7"
+                    target="_blank"
+                    class="btn btn-outline-custom px-4 py-2 d-flex align-items-center"
+                  >
+                    <i class="bi bi-facebook me-2 fs-5"></i> Facebook
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Proyek 1 -->
+    <div class="modal fade" id="modalProyek1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body text-center pt-0">
+            <img
+              src="element/Login.png"
+              class="img-fluid rounded"
+              style="max-height: 85vh; box-shadow: 0 0 20px rgba(0, 0, 0, 0.8)"
+              alt="Proyek 1 Full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Proyek 2 -->
+    <div class="modal fade" id="modalProyek2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body text-center pt-0">
+            <img
+              src="element/Kartu Nama.png"
+              class="img-fluid rounded"
+              style="max-height: 85vh; box-shadow: 0 0 20px rgba(0, 0, 0, 0.8)"
+              alt="Proyek 2 Full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Proyek 3 -->
+    <div class="modal fade" id="modalProyek3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body text-center pt-0">
+            <img
+              src="element/Web Berita.png"
+              class="img-fluid rounded"
+              style="max-height: 85vh; box-shadow: 0 0 20px rgba(0, 0, 0, 0.8)"
+              alt="Proyek 3 Full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Proyek 4 -->
+    <div class="modal fade" id="modalProyek4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body text-center pt-0">
+            <img
+              src="element/Desain Antar Muka.png"
+              class="img-fluid rounded"
+              style="max-height: 85vh; box-shadow: 0 0 20px rgba(0, 0, 0, 0.8)"
+              alt="Proyek 4 Full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 border-top">
+      <div class="container">
+        <p class="mb-0 text-secondary">
+          &copy; 2026 Gilbert Christoph Stefanus Naibaho. Berbasis di Medan.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

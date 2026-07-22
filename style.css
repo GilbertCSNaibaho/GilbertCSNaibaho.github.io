@@ -1,0 +1,134 @@
+/* style.css */
+
+:root {
+    --bg-main: #121212;
+    --bg-sec: #1e1e1e;
+    --text-main: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --accent: #00d2ff;
+    --card-border: #333333;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Typography & Colors */
+.text-accent {
+    color: var(--accent) !important;
+}
+.text-secondary {
+    color: var(--text-muted) !important;
+}
+.bg-sec {
+    background-color: var(--bg-sec);
+}
+.border-top {
+    border-top: 1px solid var(--card-border) !important;
+}
+.border-bottom.border-dark {
+    border-bottom: 1px solid var(--card-border) !important;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(18, 18, 18, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--card-border);
+}
+.navbar-brand {
+    letter-spacing: 1px;
+}
+.nav-link {
+    color: var(--text-main) !important;
+    transition: color 0.3s;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--accent) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 80px; /* Offset for navbar */
+    background: linear-gradient(135deg, var(--bg-main) 0%, #002a3a 100%);
+}
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid var(--accent);
+    padding: 5px;
+    background-color: var(--bg-sec);
+}
+
+/* Cards (Skills, Projects, Contact) */
+.card {
+    background-color: var(--bg-sec);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-title {
+    color: #ffffff;
+}
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 210, 255, 0.1);
+    border-color: rgba(0, 210, 255, 0.3);
+}
+
+/* Image on Card tweaks */
+.card-img-top {
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    object-fit: cover;
+    height: 180px; /* Supaya seragam tinggi gambarnya */
+}
+
+/* Badges & Buttons */
+.badge.bg-custom {
+    background-color: rgba(0, 210, 255, 0.1);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 8px 12px;
+    font-weight: normal;
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+.btn-accent:hover {
+    background-color: #00a8cc;
+    color: #fff;
+}
+
+.btn-outline-custom {
+    color: var(--text-main);
+    border: 1px solid var(--card-border);
+    background-color: rgba(255,255,255,0.05);
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-outline-custom:hover {
+    background-color: rgba(0, 210, 255, 0.1);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Contact Card Specific */
+.contact-card {
+    background: linear-gradient(145deg, var(--bg-sec), #151515);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-main);
+}
